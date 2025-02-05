@@ -1,18 +1,73 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 24px;
+    column-gap: 24px;
+    list-style: none;
+    padding: 24px 156px;
+    margin: 0;
+}
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+.gallery-item img {
+    display: block;
+    width: 360px;
+    height: 200px;
+    cursor: pointer;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+}
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+label {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.feedback-form button {
+    border-radius: 8px;
+    padding: 8px 16px;
+    width: 95px;
+    height: 40px;
+    background: #4e75ff;
+    font-weight: 500;
+    color: #fff;
+    border: none;
+    margin-top: 8px;
+}
+.feedback-form button:hover{
+    background: #6c8cff;
+}
+
+.feedback-form input {
+    border: 1px solid #808080;
+    border-radius: 4px;
+    width: 360px;
+    height: 40px;
+}
+
+.feedback-form input:hover {
+    border: 1px solid #000;
+}
+
+.feedback-form textarea {
+    border: 1px solid #808080;
+    border-radius: 4px;
+    width: 360px;
+    height: 80px;
+}
