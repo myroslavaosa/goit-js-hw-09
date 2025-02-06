@@ -91,10 +91,3 @@ import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
 
 let gallery = new SimpleLightbox('.gallery a');
-gallery.on('show.simplelightbox', function () {
-	// Do something…
-});
-
-gallery.on('error.simplelightbox', function (e) {
-	console.log(e); // Some usefull information
-});

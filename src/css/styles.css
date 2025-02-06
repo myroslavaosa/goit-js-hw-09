@@ -81,3 +81,7 @@ label {
     color: #2e2f42;
     font-size: 16px;
 }
+
+.sl-wrapper {
+    background: rgba(46, 47, 66, 0.8);
+}
