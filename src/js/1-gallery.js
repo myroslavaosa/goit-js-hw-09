@@ -90,4 +90,7 @@ refs.galleryList.innerHTML = allImages;
 import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
 
-let gallery = new SimpleLightbox('.gallery a');
+const gallery = new SimpleLightbox('.gallery a', {
+    captionDelay: 250,
+    captionsData: 'alt',
+  });
